@@ -7,16 +7,57 @@
     <meta name="description" content="Проект сайта путешествий LIFETOUR">
     <title>liga-accelerator-lifetour</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link href="fonts/montserrat-v26-cyrillic-300.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="fonts/montserrat-v26-cyrillic-regular.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="fonts/montserrat-v26-cyrillic-500.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="fonts/montserrat-v26-cyrillic-600.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="fonts/montserrat-v26-cyrillic-700.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="fonts/montserrat-v26-cyrillic-800.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header data-test="hero">
+        <div class="container">
+          <nav class="navigation">
+            <h1 class="visually-hidden">Навигация по сайту LIFETOUR</h1>
+            <a class="navigation__logo" href="index.html">
+              <img src="img/header/logotype.svg" width="142" height="42" alt="Логотип сайта LIFETOUR">
+            </a>
+            <ul class="navigation__list">
+              <li class="navigation__list-item">
+                <a class="navigation__list-link" href="#">Туры</a>
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__list-link" href="#">Обучение</a>
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__list-link" href="#">О нас</a>
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__list-link" href="#">Отзывы</a>
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__list-link" href="#">Фотографии</a>
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__list-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="navigation__phone">
+              <a href="tel:+788007253232">8 800 725-32-32</a>
+            </nav>
+          </div>
+        </div>
       </header>
       <main>
-        <section class="intro">
+        <section class="hero">
           <div class="container">
-            <h1>Тестовая страница.</h1>
+            <div class="hero__wrapper">
+              <h1>Захватывающие вершины Кавказа</h1>
+              <p>В сопровождении опытных гидов вы пройдёте через
+                 потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+              <button type="button">Смотреть тур</button>
+            </div>
           </div>
         </section>
       </main>
@@ -26,35 +67,36 @@
     </div>
 
     <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
+    <!-- <div class="modal modal--preload" data-modal="feedback"> -->
+      <!-- <div class="modal__wrapper"> -->
+        <!-- <div class="modal__overlay" data-close-modal></div> -->
+        <!-- <div class="modal__content"> -->
+          <!-- <p class="modal__description">Обычная модалка</p> -->
+          <!-- <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal> -->
+            <!-- <svg width="15" height="15"> -->
+              <!-- <use xlink:href="img/sprite.svg#icon-close"></use> -->
+            <!-- </svg> -->
+          <!-- </button> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
+    <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success"> -->
+      <!-- <div class="modal__wrapper"> -->
+        <!-- <div class="modal__overlay" data-close-modal></div> -->
+        <!-- <div class="modal__content"> -->
+          <!-- <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p> -->
+          <!-- <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal> -->
+            <!-- <svg width="15" height="15"> -->
+              <!-- <use xlink:href="img/sprite.svg#icon-close"></use> -->
+            <!-- </svg> -->
+          <!-- </button> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
+
