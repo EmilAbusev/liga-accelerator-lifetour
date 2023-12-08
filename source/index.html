@@ -16,13 +16,25 @@
   </head>
   <body>
     <div class="wrapper">
-      <header data-test="hero">
+      <header class="header">
         <div class="container">
+          <h1 class="visually-hidden">Навигация по сайту LIFETOUR</h1>
           <nav class="navigation">
-            <h1 class="visually-hidden">Навигация по сайту LIFETOUR</h1>
-            <a class="navigation__logo" href="index.html">
-              <img src="img/header/logotype.svg" width="142" height="42" alt="Логотип сайта LIFETOUR">
-            </a>
+          <button class="navigation__button-menu" type="button" data-menu="menu-button">
+            <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="is-closed">
+              <use href="img/sprite.svg#open-memu"></use>
+            </svg>
+            <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="is-opened">
+              <use href="img/sprite.svg#close-menu"></use>
+            </svg>
+            <span class="visually-hidden">Кнопка отображения меню</span>
+          </button>
+            <a class="navigation__logo logotype logo--is-clsoed" href="index.html">
+              <svg width="142" height="42">
+                <use href="img/sprite.svg#logotype"></use>
+              </svg>
+              <span class="visually-hidden">Логотип сайта LIFETOUR</span>
+                </a>
             <ul class="navigation__list">
               <li class="navigation__list-item">
                 <a class="navigation__list-link" href="#">Туры</a>

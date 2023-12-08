@@ -1,0 +1,86 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  padding: 32px 20px;
+  justify-content: space-between;
+  color: $color-default-white;
+  background-color: $color-navy-blue;
+
+  @include vp-1199 {
+    position: relative;
+    padding: 20px 45px;
+  }
+
+  @include vp-319 {
+
+  }
+
+}
+
+.navigation__button-menu {
+  display: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+
+  @include vp-1199 {
+    display: flex;
+  }
+
+  @include vp-319 {
+
+  }
+}
+
+.navigation__logo {
+  margin: 42px 0;
+  margin-left: 52px;
+}
+
+.navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include vp-1199 {
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  @include vp-319 {
+
+  }
+
+}
+
+.navigation__list-item {
+  margin: 55px 0;
+}
+
+.navigation__list-link {
+  padding: 23px 15px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $color-default-white;
+}
+
+.navigation__phone {
+  margin: 54px 0;
+  margin-right: 20px;
+
+  & a {
+    padding: 22px 22px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    color: $color-default-white;
+  }
+}

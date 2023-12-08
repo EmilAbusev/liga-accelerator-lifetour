@@ -367,6 +367,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
   min-height: 100vh;
 }
 
@@ -555,24 +556,115 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 40px;
 }
-@media (max-width: 1439px) {
+@media (max-width: 1199px) {
   .container {
-    padding: 0 32px;
-  }
-}
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 24px;
+    padding: 0 45px;
   }
 }
 @media (max-width: 767px) {
   .container {
-    padding: 0 16px;
+    padding: 0 15px;
   }
+}
+
+.header--sitemap {
+  padding-top: 55px;
+}
+
+.logotype--sitemap {
+  color: #ffffff;
+  background-color: #0266c1;
+  padding: 70px 140px;
+  padding-bottom: 20px;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  padding: 32px 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ffffff;
+  background-color: #0266c1;
+}
+@media (max-width: 1199px) {
+  .navigation {
+    position: relative;
+    padding: 20px 45px;
+  }
+}
+.navigation__button-menu {
+  display: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+@media (max-width: 1199px) {
+  .navigation__button-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.navigation__logo {
+  margin: 42px 0;
+  margin-left: 52px;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 1199px) {
+  .navigation__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+}
+.navigation__list-item {
+  margin: 55px 0;
+}
+
+.navigation__list-link {
+  padding: 23px 15px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.navigation__phone {
+  margin: 54px 0;
+  margin-right: 20px;
+}
+.navigation__phone a {
+  padding: 22px 22px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .btn {
