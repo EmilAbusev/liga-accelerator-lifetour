@@ -3,7 +3,8 @@
   flex-wrap: wrap;
   max-width: 1200px;
   width: 100%;
-  padding: 32px 20px;
+  padding: 28px 10px;
+  padding-bottom: 30px;
   justify-content: space-between;
   color: $color-default-white;
   background-color: $color-navy-blue;
@@ -36,18 +37,23 @@
 }
 
 .navigation__logo {
-  margin: 42px 0;
-  margin-left: 52px;
+  padding: 14px 42px;
+  padding-left: 41px;
+  padding-bottom: 7px;
 }
 
 .navigation__list {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 597px;
+  gap: 11px;
+  list-style: none;
+  align-items: center;
 
   @include vp-1199 {
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 10px;
@@ -61,11 +67,11 @@
 }
 
 .navigation__list-item {
-  margin: 55px 0;
+  margin: 0;
 }
 
 .navigation__list-link {
-  padding: 23px 15px;
+  padding: 10px 10px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -73,11 +79,14 @@
 }
 
 .navigation__phone {
-  margin: 54px 0;
-  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
   & a {
-    padding: 22px 22px;
+    padding: 22px 10px;
+    padding-top: 26px;
     font-size: 18px;
     line-height: 18px;
     font-weight: 600;

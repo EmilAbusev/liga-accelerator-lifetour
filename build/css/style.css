@@ -319,42 +319,42 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
-  src: url("../source/fonts/montserrat-v26-cyrillic-300.woff2") format("woff2");
+  src: url("../fonts/montserrat-v26-cyrillic-ext_latin-ext-300.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("../source/fonts/montserrat-v26-cyrillic-regular.woff2") format("woff2");
+  src: url("../fonts/montserrat-v26-cyrillic-ext_latin-ext-regular.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  src: url("../source/fonts/montserrat-v26-cyrillic-500.woff2") format("woff2");
+  src: url("../fonts/montserrat-v26-cyrillic-ext_latin-ext-500.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("../source/fonts/montserrat-v26-cyrillic-600.woff2") format("woff2");
+  src: url("../fonts/montserrat-v26-cyrillic-ext_latin-ext-600.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("../source/fonts/montserrat-v26-cyrillic-700.woff2") format("woff2");
+  src: url("../fonts/montserrat-v26-cyrillic-ext_latin-ext-700.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
-  src: url("../source/fonts/montserrat-v26-cyrillic-800.woff2") format("woff2");
+  src: url("../fonts/montserrat-v26-cyrillic-ext_latin-ext-800.woff2") format("woff2");
 }
 *,
 *::before,
@@ -574,6 +574,12 @@ button,
 .header--sitemap {
   padding-top: 55px;
 }
+.header .container {
+  padding: 0 120px;
+}
+.header--sitemap .container {
+  padding: 0 40px;
+}
 
 .logotype--sitemap {
   color: #ffffff;
@@ -590,7 +596,8 @@ button,
       flex-wrap: wrap;
   max-width: 1200px;
   width: 100%;
-  padding: 32px 20px;
+  padding: 28px 10px;
+  padding-bottom: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -618,8 +625,9 @@ button,
   }
 }
 .navigation__logo {
-  margin: 42px 0;
-  margin-left: 52px;
+  padding: 14px 42px;
+  padding-left: 41px;
+  padding-bottom: 7px;
 }
 
 .navigation__list {
@@ -628,12 +636,18 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 597px;
+  gap: 11px;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 1199px) {
   .navigation__list {
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -644,11 +658,11 @@ button,
   }
 }
 .navigation__list-item {
-  margin: 55px 0;
+  margin: 0;
 }
 
 .navigation__list-link {
-  padding: 23px 15px;
+  padding: 10px 10px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -656,11 +670,21 @@ button,
 }
 
 .navigation__phone {
-  margin: 54px 0;
-  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .navigation__phone a {
-  padding: 22px 22px;
+  padding: 22px 10px;
+  padding-top: 26px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 600;

@@ -2,4 +2,12 @@
   &--sitemap {
     padding-top: 55px;
   }
+
+  & .container {
+    padding: 0 120px;
+  }
+
+  &--sitemap .container {
+    padding: 0 40px;
+  }
 }
