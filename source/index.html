@@ -13,6 +13,9 @@
     <link href="fonts/montserrat-v26-cyrillic-ext_latin-ext-600.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
     <link href="fonts/montserrat-v26-cyrillic-ext_latin-ext-700.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
     <link href="fonts/montserrat-v26-cyrillic-ext_latin-ext-800.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/favicon.png">
   </head>
   <body>
     <div class="wrapper">
@@ -24,18 +27,18 @@
             <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="is-closed">
               <use href="img/sprite.svg#open-memu"></use>
             </svg>
-            <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="is-opened">
+            <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="is-opened" style="display: none;">
               <use href="img/sprite.svg#close-menu"></use>
             </svg>
             <span class="visually-hidden">Кнопка отображения меню</span>
           </button>
-            <a class="navigation__logo logotype logo--is-clsoed" href="index.html">
+            <a class="navigation__logo logotype logotype--is-closed" href="index.html" data-menu="navigation-logo">
               <svg width="142" height="42">
                 <use href="img/sprite.svg#logotype"></use>
               </svg>
               <span class="visually-hidden">Логотип сайта LIFETOUR</span>
                 </a>
-            <ul class="navigation__list">
+            <ul class="navigation__list navigation__list--is-closed" data-menu="navigation-menu">
               <li class="navigation__list-item">
                 <a class="navigation__list-link" href="#">Туры</a>
               </li>
@@ -55,7 +58,7 @@
                 <a class="navigation__list-link" href="#">Контакты</a>
               </li>
             </ul>
-            <div class="navigation__phone">
+            <div class="navigation__phone phone--is-closed" data-menu="navigation-phone">
               <a href="tel:+788007253232">8 800 725-32-32</a>
             </nav>
           </div>

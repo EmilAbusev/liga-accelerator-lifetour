@@ -3,22 +3,73 @@
   flex-wrap: wrap;
   max-width: 1200px;
   width: 100%;
-  padding: 28px 10px;
-  padding-bottom: 30px;
+  padding: 30px 20px;
+  padding-bottom: 28px;
   justify-content: space-between;
   color: $color-default-white;
   background-color: $color-navy-blue;
 
   @include vp-1199 {
     position: relative;
-    padding: 20px 45px;
+    padding: 7px 45px;
   }
 
-  @include vp-319 {
-
+  @include vp-767 {
+    display: grid;
+    grid-template-areas: "button-list logotipe" "phone phone" "navigation-list navigation-list";
+    grid-template-columns: 26px 1fr;
+    grid-template-rows: 42px auto auto;
+    padding: 15px 15px 13px;
   }
 
+
+  &--is-opened {
+    background-color: $color-default-white;
+
+
+    @include vp-1199 {
+      padding: 6px 33px;
+
+      & .navigation__button-menu {
+        margin-left: 22px;
+        margin-right: 99px;
+
+        &:focus {
+          outline: 1px solid $color-elephant;
+          outline-offset: 5px;
+        }
+      }
+
+      .navigation__list {
+        padding-top: 35px;
+      }
+    }
+
+
+    @include vp-767 {
+      padding: 0 5px;
+      padding-top: 15px;
+      grid-template-columns: 40px 1fr;
+      grid-template-rows: 53px auto auto;
+
+
+      & .navigation__button-menu {
+        margin: 0;
+        margin-left: 10px;
+      }
+
+      .navigation__logo {
+        margin-right: 10px;
+      }
+
+      .navigation__list {
+        padding-top: 23px;
+        gap: 12px;
+      }
+    }
+  }
 }
+
 
 .navigation__button-menu {
   display: none;
@@ -26,70 +77,214 @@
   padding: 0;
   cursor: pointer;
   background-color: transparent;
+  align-self: center;
+
+  &:focus {
+    outline: 1px solid $color-default-white;
+    outline-offset: 5px;
+  }
 
   @include vp-1199 {
     display: flex;
+    order: 1;
+    margin-right: 103px;
   }
 
-  @include vp-319 {
-
+  @include vp-767 {
+    margin: 0;
+    align-self: start;
+    grid-area: button-list;
   }
 }
+
 
 .navigation__logo {
-  padding: 14px 42px;
-  padding-left: 41px;
+  padding: 12px 30px;
+  padding-left: 32px;
   padding-bottom: 7px;
+
+  @include vp-1199 {
+    order: 2;
+    padding-top: 13px;
+    padding-bottom: 6px;
+  }
+
+  @include vp-767 {
+    justify-self: end;
+    grid-area: logotipe;
+    padding: 0;
+  }
 }
+
 
 .navigation__list {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
-  width: 597px;
   gap: 11px;
   list-style: none;
   align-items: center;
 
   @include vp-1199 {
     display: none;
+    width: 100%;
+    order: 4;
+    gap: 18px;
     flex-direction: column;
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    align-items: start;
   }
 
-  @include vp-319 {
-
+  @include vp-767 {
+    row-gap: 22px;
+    grid-area: navigation-list;
   }
-
 }
+
 
 .navigation__list-item {
   margin: 0;
+  padding: 0;
+
+  @include vp-767 {
+    letter-spacing: 0.5px;
+  }
 }
 
+
 .navigation__list-link {
+  position: relative;
   padding: 10px 10px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   color: $color-default-white;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: $color-default-white;
+    transition: $trans-default;
+    transform: scale(0);
+    content: "";
+  }
+
+    &:hover {
+      &::before {
+        transform: scale(1);
+      }
+    }
+    &:active {
+      &::before {
+        display: none;
+      }
+    }
+    &:focus {
+     outline: 1px solid $color-default-white;
+    }
+
+
+  @include vp-1199 {
+    padding: 10px;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-elephant;
+
+    &:focus {
+      outline: 1px solid $color-elephant;
+    }
+
+    &:hover {
+      &::before {
+        background-color: $color-elephant;
+      }
+    }
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
+
 
 .navigation__phone {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 15px;
+
+
+  @include vp-1199 {
+    order: 3;
+    margin-top: 4px;
+
+  @include vp-767 {
+    justify-content: end;
+    grid-area: phone;
+    margin-top: 16px;
+    }
+  }
 
   & a {
-    padding: 22px 10px;
-    padding-top: 26px;
     font-size: 18px;
     line-height: 18px;
     font-weight: 600;
     color: $color-default-white;
+
+    &:hover,
+    &:focus {
+      color: $color-resolution-blue;
+      outline: none;
+    }
+
+    &:active {
+      color: $color-white-05;
+    }
+
+    &:disabled {
+      color: $color-default-white;
+    }
+
+    @include vp-1199 {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 14px;
+    }
   }
 }
+
+.phone--is-opened {
+
+  @include vp-1199 {
+    margin-top: 5px;
+    margin-right: 22px;
+
+      a {
+        color: $color-elephant;
+
+        &:active {
+          color: $color-navy-blue;
+        }
+
+        &:disabled {
+          color: $color-navy-blue;
+        }
+      }
+  }
+
+  @include vp-767 {
+    margin-right: 10px;
+  }
+}
+
