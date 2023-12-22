@@ -1900,7 +1900,7 @@ button,
      object-fit: cover;
 }
 
-.hero__pagination {
+.swiper .hero__pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1911,20 +1911,20 @@ button,
       -ms-flex-pack: end;
           justify-content: flex-end;
   bottom: 97px;
-  right: 120px;
+  right: 0;
   left: 0;
   z-index: 1;
   gap: 20px;
   cursor: pointer;
 }
-.hero__pagination-button {
+.swiper .hero__pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
+  opacity: 1;
   border: 1px solid #ffffff;
-  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0);
 }
-.hero__pagination-button--is-opened {
+.swiper .hero__pagination .swiper-pagination-bullet-active {
   background-color: #ffffff;
 }
 

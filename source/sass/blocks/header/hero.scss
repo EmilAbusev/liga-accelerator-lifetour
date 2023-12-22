@@ -51,32 +51,29 @@
     }
   }
 }
+.swiper {
+  .hero__pagination {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    justify-content: flex-end;
+    bottom: 97px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    gap: 20px;
+    cursor: pointer;
 
-.hero__pagination {
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  justify-content: flex-end;
-  bottom: 97px;
-  right: 120px;
-  left: 0;
-  z-index: 1;
-  gap: 20px;
-  cursor: pointer;
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      opacity: 1;
+      border: 1px solid $color-default-white;
+      background-color: $color-transparent;
+    }
 
-  &-button {
-    width: 10px;
-    height: 10px;
-    border: 1px solid $color-default-white;
-    border-radius: 50%;
-    background-color: $color-transparent;
-
-    &--is-opened {
+    .swiper-pagination-bullet-active {
       background-color: $color-default-white;
     }
   }
-
 }
-
-
-
