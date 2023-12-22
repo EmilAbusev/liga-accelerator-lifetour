@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Проект сайта путешествий LIFETOUR">
   <title>liga-accelerator-lifetour</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -23,6 +23,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/favicon.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
@@ -73,7 +74,7 @@
       <div class="hero" data-menu="hero">
         <div class="hero__swiper" data-hero-slider="hero-slider">
           <ul class="hero__list">
-            <li class="hero__item hero--is-opened">
+            <li class="hero__item">
               <div class="container">
                 <div class="hero__slide">
                   <div class="hero__description description">
@@ -98,9 +99,10 @@
                   </div>
                   <div class="description__video">
                     <picture>
-                      <source>
-                      <source>
-                      <source type="image/jpeg" media="(max-width: 1024px)" width="442" heigth="300"
+                      <source type="image/webp" media="(max-width: 1199px)" width="442" heigth="300"
+                       srcset="./img/pucture/content-hero/video-tablet@1x.webp 1x, ./img/pucture/content-hero/video-tablet@2x.webp 2x">
+                      <source type="image/webp" width="482" height="317" srcset="./img/pucture/content-hero/video-desktop@1x.webp 1x, ./img/pucture/content-hero/video-desktop@1x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 1199px)" width="442" heigth="300"
                         srcset="./img/pucture/content-hero/video-tablet@1x.jpg 1x, ./img/pucture/content-hero/video-tablet@2x.jpg 2x">
                       <img src="./img/pucture/content-hero/video-desktop@1x.jpg" width="482" height="317"
                         srcset="./img/pucture/content-hero/video-desktop@2x.jpg">
@@ -116,15 +118,16 @@
               </div>
               <div class="hero__image">
                 <picture>
-                  <source>
-                  <source>
-                  <source>
-                  <source type="image/jpeg" media="(max-width: 350px)" width="350" height="568"
+                  <source type="image/webp" media="(max-width: 767px)" width="350" height="568"
+                  srcset="./img/pucture/content-hero/slide1-mobile@1x.webp 1x, ./img/pucture/content-hero/slide1-mobile@1x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" width="768" height="1024"
+                  srcset="./img/pucture/content-hero/slide1-tablet@1x.webp 1x, ./img/pucture/content-hero/slide1-tablet@1x.webp 2x">
+                  <source type="image/webp" width="1440" height="800"
+                  srcset="./img/pucture/content-hero/slide1-desktop@1x.webp 1x, ./img/pucture/content-hero/slide1-desktop@1x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 767px)" width="350" height="568"
                     srcset="./img/pucture/content-hero/slide1-mobile@1x.jpg 1x, ./img/pucture/content-hero/slide1-mobile@1x.jpg 2x">
-                  <source type="image/jpeg" media="(max-width: 768px)" width="768" height="1024"
+                  <source type="image/jpeg" media="(max-width: 1199px)" width="768" height="1024"
                     srcset="./img/pucture/content-hero/slide1-tablet@1x.jpg 1x, ./img/pucture/content-hero/slide1-tablet@1x.jpg 2x">
-                  <source type="image/jpeg" media="(max-width: 1024px)" width="1024" height="1024"
-                    srcset="./img/pucture/content-hero/slide1-tablet-1024@1x.jpg 1x, ./img/pucture/content-hero/slide1-tablet-1024@2x.jpg 2x">
                   <img src="./img/pucture/content-hero/slide1-desktop@1x.jpg" width="1440" height="800"
                     srcset="./img/pucture/content-hero/slide1-desktop@2x.jpg" alt="Захватывающие вершины Кавказа">
                 </picture>
@@ -155,31 +158,30 @@
                   </div>
                   <div class="description__photo">
                     <picture>
-                      <source type="image/jpeg" media="(max-width: 768px)" width="266" height="351"
-                        srcset=".img/pucture/content-hero/photo1-tablet@1x.jpg 1x, .img/pucture/content-hero/photo1-tablet@2x.jpg 2x">
-                      <img src="./img/pucture/content-hero/photo1-desktop@1x.jpg" width="308" height="407"
-                        srcset="./img/pucture/content-hero/photo1-desktop@2x.jpg" alt="Фотоснимок озера в горах">
-                    </picture>
-                    <picture>
-                      <source type="image/jpeg" media="(max-width: 768px)" width="236" height="312"
-                        srcset=".img/pucture/content-hero/photo2-tablet@1x.jpg 1x, .img/pucture/content-hero/photo2-tablet@2x.jpg 2x">
-                      <img src="./img/pucture/content-hero/photo2-desktop@1x.jpg" width="277" height="366"
-                        srcset="./img/pucture/content-hero/photo2-desktop@2x.jpg" alt="Фотоснимок туриста">
+                      <source type="image/webp" media="(max-width: 1199)" width="442" height="365"
+                      srcset=".img/pucture/content-hero/photo-cards-tablet@1x.webp 1x, .img/pucture/content-hero/photo-cards-tablet@2x.webp 2x">
+                      <source type="image/webp" width="308" height="407"
+                      srcset="./img/pucture/content-hero/photo-cards-desktop@1x.webp 1x, ./img/pucture/content-hero/photo-cards-desktop@2x.webp 2x">
+                      <source type="image/png" media="(max-width: 1199)" width="442" height="365"
+                        srcset=".img/pucture/content-hero/photo-cards-tablet@1x.png 1x, .img/pucture/content-hero/photo-cards-tablet@2x.png 2x">
+                      <img src="./img/pucture/content-hero/photo-cards-desktop@1x.png" width="308" height="407"
+                        srcset="./img/pucture/content-hero/photo-cards-desktop@2x.png" alt="Фотоснимок на память">
                     </picture>
                   </div>
                 </div>
               </div>
               <div class="hero__image">
                 <picture>
-                  <source>
-                  <source>
-                  <source>
-                  <source type="image/jpeg" media="(max-width: 350px)" width="350" heigth="568"
+                  <source type="image/webp" media="(max-width: 767px)" width="350" heigth="568"
+                    srcset="./img/pucture/content-hero/slide2-mobile@1x.webp 1x, ./img/pucture/content-hero/slide2-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" width="768" heigth="1024"
+                    srcset="./img/pucture/content-hero/slide2-tablet@1x.webp 1x, ./img/pucture/content-hero/slide2-tablet@2x.webp 2x">
+                  <source type="image/webp" width="1440" height="800"
+                    srcset="./img/pucture/content-hero/slide2-desktop@1x.webp 1x, ./img/pucture/content-hero/slide2-desktop@1x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 767px)" width="350" heigth="568"
                     srcset="./img/pucture/content-hero/slide2-mobile@1x.jpg 1x, ./img/pucture/content-hero/slide2-mobile@2x.jpg 2x">
-                  <source type="image/jpeg" media="(max-width: 768px)" width="768" heigth="1024"
+                  <source type="image/jpeg" media="(max-width: 1199px)" width="768" heigth="1024"
                     srcset="./img/pucture/content-hero/slide2-tablet@1x.jpg 1x, ./img/pucture/content-hero/slide2-tablet@2x.jpg 2x">
-                  <source type="image/jpeg" media="(max-width: 1024px)" width="1024" heigth="1024"
-                    srcset="./img/pucture/content-hero/slide2-tablet-1024@1x.jpg 1x, ./img/pucture/content-hero/slide2-tablet-1024@2x.jpg 2x">
                   <img src="./img/pucture/content-hero/slide2-desktop@1x.jpg" width="1440" height="800"
                     srcset="./img/pucture/content-hero/slide2-desktop@2x.jpg" alt="Невероятная природа Камчатки">
                 </picture>
@@ -214,14 +216,16 @@
                 </div>
                 <div class="hero__image">
                   <picture>
-                    <source>
-                    <source>
-                    <source>
-                    <source type="image/jpeg" media="(max-width: 350px)" width="350" heigth="568"
+                    <source type="image/jpeg" media="(max-width: 767px)" width="350" heigth="568"
+                      srcset="./img/pucture/content-hero/slide3-mobile@1x.webp 1x, ./img/pucture/content-hero/slide3-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)" width="768" heigth="1024"
+                      srcset="./img/pucture/content-hero/slide3-tablet@1x.webp 1x, ./img/pucture/content-hero/slide3-tablet@2x.webp 2x">
+                    <source type="image/webp" width="1440" heigth="800"
+                      srcset="./img/pucture/content-hero/slide3-desktop@1x.webp 1x, ./img/pucture/content-hero/slide3-desktop@2x.webp 2x">
+                    <source type="image/jpeg" media="(max-width: 767px)" width="350" heigth="568"
                       srcset="./img/pucture/content-hero/slide3-mobile@1x.jpg 1x, ./img/pucture/content-hero/slide3-mobile@2x.jpg 2x">
-                    <source type="image/jpeg" media="(max-width: 768px)" width="768" heigth="1024"
+                    <source type="image/jpeg" media="(max-width: 1199px)" width="768" heigth="1024"
                       srcset="./img/pucture/content-hero/slide3-tablet@1x.jpg 1x, ./img/pucture/content-hero/slide3-tablet@2x.jpg 2x">
-                    <source type="image/jpeg" media="(max-width: 1024px)" width="1024" heigth="1024" srcset="">
                     <img src="./img/pucture/content-hero/slide3-desktop@1x.jpg" width="1440" height="800"
                       srcset="./img/pucture/content-hero/slide3-desktop@2x.jpg"
                       alt="Магические пейзажи Алтайского Края">
