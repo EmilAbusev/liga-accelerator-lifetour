@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {toggleNavigationMenu} from './navigation-menu/navigation-button';
+import {swiper} from './swiper-slider/hero-swiper-slider';
 
 // ---------------------------------
 
@@ -9,6 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   window.addEventListener('load', () => {
     toggleNavigationMenu();
+    swiper();
     initModals();
     const form = new Form();
     window.form = form;

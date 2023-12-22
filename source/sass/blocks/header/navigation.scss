@@ -1,16 +1,19 @@
 .navigation {
   display: flex;
   flex-wrap: wrap;
+  position: absolute;
   max-width: 1200px;
   width: 100%;
   padding: 30px 20px;
   padding-bottom: 28px;
+  z-index: 4;
   justify-content: space-between;
   color: $color-default-white;
   background-color: $color-navy-blue;
 
   @include vp-1199 {
-    position: relative;
+    position: absolute;
+    z-index: 4;
     padding: 7px 45px;
   }
 
@@ -28,6 +31,8 @@
 
 
     @include vp-1199 {
+      position: absolute;
+      z-index: 4;
       padding: 6px 33px;
 
       & .navigation__button-menu {

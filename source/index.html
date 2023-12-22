@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Проект сайта путешествий LIFETOUR">
-    <title>liga-accelerator-lifetour</title>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link href="fonts/montserrat-v26-cyrillic-ext_latin-ext-300.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
-    <link href="fonts/montserrat-v26-cyrillic-ext_latin-ext-regular.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
-    <link href="fonts/montserrat-v26-cyrillic-ext_latin-ext-500.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
-    <link href="fonts/montserrat-v26-cyrillic-ext_latin-ext-600.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
-    <link href="fonts/montserrat-v26-cyrillic-ext_latin-ext-700.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
-    <link href="fonts/montserrat-v26-cyrillic-ext_latin-ext-800.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicon/favicon.png">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          <h1 class="visually-hidden">Навигация по сайту LIFETOUR</h1>
-          <nav class="navigation navigation--is-closed" data-menu="main-navigation">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Проект сайта путешествий LIFETOUR">
+  <title>liga-accelerator-lifetour</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="fonts/montserrat-v26-cyrillic-ext_latin-ext-300.woff2" rel="preload" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link href="fonts/montserrat-v26-cyrillic-ext_latin-ext-regular.woff2" rel="preload" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link href="fonts/montserrat-v26-cyrillic-ext_latin-ext-500.woff2" rel="preload" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link href="fonts/montserrat-v26-cyrillic-ext_latin-ext-600.woff2" rel="preload" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link href="fonts/montserrat-v26-cyrillic-ext_latin-ext-700.woff2" rel="preload" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link href="fonts/montserrat-v26-cyrillic-ext_latin-ext-800.woff2" rel="preload" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/favicon.png">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <h1 class="visually-hidden">Навигация по сайту LIFETOUR</h1>
+        <nav class="navigation navigation--is-closed" data-menu="main-navigation">
           <button class="navigation__button-menu" type="button" data-menu="menu-button">
             <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="is-closed">
               <use href="img/sprite.svg#open-memu"></use>
@@ -32,46 +40,48 @@
             </svg>
             <span class="visually-hidden">Кнопка отображения меню</span>
           </button>
-            <a class="navigation__logo logotype logotype--is-closed" href="index.html" data-menu="navigation-logo">
-              <svg width="142" height="42">
-                <use href="img/sprite.svg#logotype"></use>
-              </svg>
-              <span class="visually-hidden">Логотип сайта LIFETOUR</span>
-                </a>
-            <ul class="navigation__list navigation__list--is-closed" data-menu="navigation-menu">
-              <li class="navigation__list-item">
-                <a class="navigation__list-link" href="#">Туры</a>
-              </li>
-              <li class="navigation__list-item">
-                <a class="navigation__list-link" href="#">Обучение</a>
-              </li>
-              <li class="navigation__list-item">
-                <a class="navigation__list-link" href="#">О нас</a>
-              </li>
-              <li class="navigation__list-item">
-                <a class="navigation__list-link" href="#">Отзывы</a>
-              </li>
-              <li class="navigation__list-item">
-                <a class="navigation__list-link" href="#">Фотографии</a>
-              </li>
-              <li class="navigation__list-item">
-                <a class="navigation__list-link" href="#">Контакты</a>
-              </li>
-            </ul>
-            <div class="navigation__phone phone--is-closed" data-menu="navigation-phone">
-              <a href="tel:+788007253232">8 800 725-32-32</a>
-            </nav>
-          </div>
-          <div class="hero">
-            <ul class="hero__list">
-              <li class="hero__list-item">
-                <div class="container">
-                  <div class="hero__wrapper">
-                    <div class="hero__information">
-                      <h2>Захватывающие вершины Кавказа</h2>
-                      <p>В сопровождении опытных гидов вы пройдёте через потрясающие
-                         ландшафты и совершите восход на вершину горы Чегет.</p>
-                      <button type="button">Смотреть тур</button>
+          <a class="navigation__logo logotype logotype--is-closed" href="index.html" data-menu="navigation-logo">
+            <svg width="142" height="42">
+              <use href="img/sprite.svg#logotype"></use>
+            </svg>
+            <span class="visually-hidden">Логотип сайта LIFETOUR</span>
+          </a>
+          <ul class="navigation__list navigation__list--is-closed" data-menu="navigation-menu">
+            <li class="navigation__list-item">
+              <a class="navigation__list-link" href="#">Туры</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-link" href="#">Обучение</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-link" href="#">О нас</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-link" href="#">Отзывы</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-link" href="#">Фотографии</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="navigation__phone phone--is-closed " data-menu="navigation-phone">
+            <a href="tel:+788007253232">8 800 725-32-32</a>
+        </nav>
+      </div>
+      <div class="hero" data-menu="hero">
+        <div class="hero__swiper" data-hero-slider="hero-slider">
+          <ul class="hero__list">
+            <li class="hero__item hero--is-opened">
+              <div class="container">
+                <div class="hero__slide">
+                  <div class="hero__description description">
+                    <h2>Захватывающие вершины Кавказа</h2>
+                    <p>В сопровождении опытных гидов вы пройдёте через потрясающие
+                      ландшафты и совершите восход на вершину горы Чегет.</p>
+                    <a class="description__button" type="button">Смотреть тур</a>
+                    <div class="description__correction">
                       <span>
                         <svg width="12" height="12" viewBox="0 0 12 12" role="img" aria-hidden="true" focusable="false">
                           <use href="img/sprite.svg#moon"></use>
@@ -85,164 +95,185 @@
                         Высокая сложность
                       </span>
                     </div>
-                    <div class="hero__video">
-                      <picture>
-                        <source>
-                        <source>
-                        <source type="image/jpeg" media="(max-width: 1024px)" width="442" heigth="300" srcset="./img/pucture/content-hero/video-tablet@1x.jpg 1x, ./img/pucture/content-hero/video-tablet@2x.jpg 2x">
-                        <img src="./img/pucture/content-hero/video-desktop@1x.jpg" width="482" height="317" srcset="./img/pucture/content-hero/video-desktop@2x.jpg">
-                      </picture>
-                      <button type="button">
-                        <svg>
-                          <use></use>
-                        </svg>
-                        <span class="visually-hidden">Кнопка проигрывания видео</span>
-                      </button>
-                    </div>
                   </div>
-                </div>
-                <div class="hero__image">
-                  <picture>
-                    <source>
-                    <source>
-                    <source>
-                    <source type="image/jpeg" media="(max-width: 350px)" width="350" height="568" srcset="./img/pucture/content-hero/slide1-mobile@1x.jpg 1x, ./img/pucture/content-hero/slide1-mobile@1x.jpg 2x">
-                    <source type="image/jpeg" media="(max-width: 768px)" width="768" height="1024" srcset="./img/pucture/content-hero/slide1-tablet@1x.jpg 1x, ./img/pucture/content-hero/slide1-tablet@1x.jpg 2x">
-                    <source type="image/jpeg" media="(max-width: 1024px)" width="1024" height="1024" srcset="./img/pucture/content-hero/slide1-tablet-1024@1x.jpg 1x, ./img/pucture/content-hero/slide1-tablet-1024@2x.jpg 2x">
-                    <img src="./img/pucture/content-hero/slide1-desktop@1x.jpg" width="1440" height="800" srcset="./img/pucture/content-hero/slide1-desktop@2x.jpg" alt="Захватывающие вершины Кавказа">
-                  </picture>
-                </div>
-              </li>
-              <li class="hero__list-item">
-                <div class="container">
-                  <div class="hero__wrapper">
-                    <div class="hero__information">
-                      <h2>Невероятная природа Камчатки</h2>
-                      <p>Незабываемое приключение, во время которого вы отправитесь
-                         в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-                      <button type="button">Смотреть тур</button>
-                      <span>
-                        <svg width="12" height="12" viewBox="0 0 12 12" role="img" aria-hidden="true" focusable="false">
-                          <use href="img/sprite.svg#moon"></use>
-                        </svg>
-                        9 дней/10 ночей</span>
-                      <span>
-                        <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
-                          <use href="./img/sprite.svg#level"></use>
-                        </svg>
-                        Средняя сложность
-                      </span>
-                    </div>
-                    <div class="hero__photo">
-                      <picture>
-                        <img src="">
-                      </picture>
-                      <button type="button">
-                        <span class="visually-hidden">Кнопка проигрывания видео</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="hero__image">
-                  <picture>
-                    <source>
-                    <source>
-                    <source>
-                    <source type="image/jpeg" media="(max-width: 350px)" width="350" heigth="568" srcset="./img/pucture/content-hero/slide2-mobile@1x.jpg 1x, ./img/pucture/content-hero/slide2-mobile@2x.jpg 2x">
-                    <source type="image/jpeg" media="(max-width: 768px)" width="768" heigth="1024" srcset="./img/pucture/content-hero/slide2-tablet@1x.jpg 1x, ./img/pucture/content-hero/slide2-tablet@2x.jpg 2x">
-                    <source type="image/jpeg" media="(max-width: 1024px)" width="1024" heigth="1024" srcset="./img/pucture/content-hero/slide2-tablet-1024@1x.jpg 1x, ./img/pucture/content-hero/slide2-tablet-1024@2x.jpg 2x">
-                    <img src="./img/pucture/content-hero/slide2-desktop@1x.jpg" width="1440" height="800" srcset="./img/pucture/content-hero/slide2-desktop@2x.jpg" alt="Невероятная природа Камчатки">
-                  </picture>
-                </div>
-              </li>
-              <li class="hero__list-item">
-                <div class="hero__wrapper">
-                  <div class="hero__information">
-                    <h2>Магические пейзажи Алтайского Края</h2>
-                    <p>Алтайский трекинг-тур — это захватывающее приключение с
-                      посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
-                    <button type="button">Смотреть тур</button>
-                    <span>
-                      <svg width="12" height="12" viewBox="0 0 12 12" role="img" aria-hidden="true" focusable="false">
-                        <use href="img/sprite.svg#moon"></use>
-                      </svg>
-                      8 дней/7 ночей
-                    </span>
-                    <span>
-                      <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
-                        <use href="./img/sprite.svg#level"></use>
-                      </svg>
-                      Лёгкая сложность
-                    </span>
-                  </div>
-                  <div class="hero__music">
+                  <div class="description__video">
                     <picture>
-                      <img src="">
+                      <source>
+                      <source>
+                      <source type="image/jpeg" media="(max-width: 1024px)" width="442" heigth="300"
+                        srcset="./img/pucture/content-hero/video-tablet@1x.jpg 1x, ./img/pucture/content-hero/video-tablet@2x.jpg 2x">
+                      <img src="./img/pucture/content-hero/video-desktop@1x.jpg" width="482" height="317"
+                        srcset="./img/pucture/content-hero/video-desktop@2x.jpg">
                     </picture>
-                    <button type="button">
+                    <button class="description__button-player" type="button">
+                      <svg width="12" height="22" viewBox="0 0 12 22" role="img" aria-hidden="true" focusable="false">
+                        <use href="img/sprite.svg#arrow-play"></use>
+                      </svg>
                       <span class="visually-hidden">Кнопка проигрывания видео</span>
                     </button>
                   </div>
                 </div>
+              </div>
+              <div class="hero__image">
+                <picture>
+                  <source>
+                  <source>
+                  <source>
+                  <source type="image/jpeg" media="(max-width: 350px)" width="350" height="568"
+                    srcset="./img/pucture/content-hero/slide1-mobile@1x.jpg 1x, ./img/pucture/content-hero/slide1-mobile@1x.jpg 2x">
+                  <source type="image/jpeg" media="(max-width: 768px)" width="768" height="1024"
+                    srcset="./img/pucture/content-hero/slide1-tablet@1x.jpg 1x, ./img/pucture/content-hero/slide1-tablet@1x.jpg 2x">
+                  <source type="image/jpeg" media="(max-width: 1024px)" width="1024" height="1024"
+                    srcset="./img/pucture/content-hero/slide1-tablet-1024@1x.jpg 1x, ./img/pucture/content-hero/slide1-tablet-1024@2x.jpg 2x">
+                  <img src="./img/pucture/content-hero/slide1-desktop@1x.jpg" width="1440" height="800"
+                    srcset="./img/pucture/content-hero/slide1-desktop@2x.jpg" alt="Захватывающие вершины Кавказа">
+                </picture>
+              </div>
+            </li>
+            <li class="hero__item visually-hidden">
+              <div class="container">
+                <div class="hero__slide">
+                  <div class="hero__descriptionn description">
+                    <h2>Невероятная природа Камчатки</h2>
+                    <p>Незабываемое приключение, во время которого вы отправитесь
+                      в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+                    <a class="description__button" type="button">Смотреть тур</a>
+                    <div class="description__correction">
+                      <span>
+                        <svg width="12" height="12" viewBox="0 0 12 12" role="img" aria-hidden="true" focusable="false">
+                          <use href="img/sprite.svg#moon"></use>
+                        </svg>
+                        6 дней/5 ночей
+                      </span>
+                      <span>
+                        <svg width="12" height="12" viewBox="0 0 12 12" role="img" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#level"></use>
+                        </svg>
+                        Высокая сложность
+                      </span>
+                    </div>
+                  </div>
+                  <div class="description__photo">
+                    <picture>
+                      <source type="image/jpeg" media="(max-width: 768px)" width="266" height="351"
+                        srcset=".img/pucture/content-hero/photo1-tablet@1x.jpg 1x, .img/pucture/content-hero/photo1-tablet@2x.jpg 2x">
+                      <img src="./img/pucture/content-hero/photo1-desktop@1x.jpg" width="308" height="407"
+                        srcset="./img/pucture/content-hero/photo1-desktop@2x.jpg" alt="Фотоснимок озера в горах">
+                    </picture>
+                    <picture>
+                      <source type="image/jpeg" media="(max-width: 768px)" width="236" height="312"
+                        srcset=".img/pucture/content-hero/photo2-tablet@1x.jpg 1x, .img/pucture/content-hero/photo2-tablet@2x.jpg 2x">
+                      <img src="./img/pucture/content-hero/photo2-desktop@1x.jpg" width="277" height="366"
+                        srcset="./img/pucture/content-hero/photo2-desktop@2x.jpg" alt="Фотоснимок туриста">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="hero__image">
+                <picture>
+                  <source>
+                  <source>
+                  <source>
+                  <source type="image/jpeg" media="(max-width: 350px)" width="350" heigth="568"
+                    srcset="./img/pucture/content-hero/slide2-mobile@1x.jpg 1x, ./img/pucture/content-hero/slide2-mobile@2x.jpg 2x">
+                  <source type="image/jpeg" media="(max-width: 768px)" width="768" heigth="1024"
+                    srcset="./img/pucture/content-hero/slide2-tablet@1x.jpg 1x, ./img/pucture/content-hero/slide2-tablet@2x.jpg 2x">
+                  <source type="image/jpeg" media="(max-width: 1024px)" width="1024" heigth="1024"
+                    srcset="./img/pucture/content-hero/slide2-tablet-1024@1x.jpg 1x, ./img/pucture/content-hero/slide2-tablet-1024@2x.jpg 2x">
+                  <img src="./img/pucture/content-hero/slide2-desktop@1x.jpg" width="1440" height="800"
+                    srcset="./img/pucture/content-hero/slide2-desktop@2x.jpg" alt="Невероятная природа Камчатки">
+                </picture>
+              </div>
+            </li>
+            <li class="hero__item visually-hidden">
+              <div class="container">
+                <div class="hero__slide">
+                  <div class="hero__description description">
+                    <h2>Магические пейзажи Алтайского Края</h2>
+                    <p>Алтайский трекинг-тур — это захватывающее приключение с
+                      посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
+                    <a class="description__button" type="button">Смотреть тур</a>
+                    <div class="description__correction">
+                      <span>
+                        <svg width="12" height="12" viewBox="0 0 12 12" role="img" aria-hidden="true" focusable="false">
+                          <use href="img/sprite.svg#moon"></use>
+                        </svg>
+                        6 дней/5 ночей
+                      </span>
+                      <span>
+                        <svg width="12" height="12" viewBox="0 0 12 12" role="img" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#level"></use>
+                        </svg>
+                        Высокая сложность
+                      </span>
+                    </div>
+                  </div>
+                  <div class="description__music">
+                      <iframe style="border:none;width:340px;height:220px;" loading="lazy" width="340" height="220" src="https://music.yandex.ru/iframe/track/119107082/25474374"></iframe>                    </picture>
+                  </div>
+                </div>
                 <div class="hero__image">
                   <picture>
                     <source>
                     <source>
                     <source>
-                    <source type="image/jpeg" media="(max-width: 350px)" width="350" heigth="568" srcset="./img/pucture/content-hero/slide3-mobile@1x.jpg 1x, ./img/pucture/content-hero/slide3-mobile@2x.jpg 2x">
-                    <source type="image/jpeg" media="(max-width: 768px)" width="768" heigth="1024" srcset="./img/pucture/content-hero/slide3-tablet@1x.jpg 1x, ./img/pucture/content-hero/slide3-tablet@2x.jpg 2x">
+                    <source type="image/jpeg" media="(max-width: 350px)" width="350" heigth="568"
+                      srcset="./img/pucture/content-hero/slide3-mobile@1x.jpg 1x, ./img/pucture/content-hero/slide3-mobile@2x.jpg 2x">
+                    <source type="image/jpeg" media="(max-width: 768px)" width="768" heigth="1024"
+                      srcset="./img/pucture/content-hero/slide3-tablet@1x.jpg 1x, ./img/pucture/content-hero/slide3-tablet@2x.jpg 2x">
                     <source type="image/jpeg" media="(max-width: 1024px)" width="1024" heigth="1024" srcset="">
-                    <img src="./img/pucture/content-hero/slide3-desktop@1x.jpg" width="1440" height="800" srcset="./img/pucture/content-hero/slide3-desktop@2x.jpg" alt="Магические пейзажи Алтайского Края">
+                    <img src="./img/pucture/content-hero/slide3-desktop@1x.jpg" width="1440" height="800"
+                      srcset="./img/pucture/content-hero/slide3-desktop@2x.jpg"
+                      alt="Магические пейзажи Алтайского Края">
                   </picture>
                 </div>
-              </li>
-            </ul>
-            <div class="hero__toggle">
-              <button type="button"></button>
-              <button type="button"></button>
-              <button type="button"></button>
-            </div>
+              </div>
+            </li>
+          </ul>
+          <div class="hero__pagination swiper-pagination" data-hero-pagination="hero-swiper-pagination">
           </div>
-        </header>
+        </div>
       </div>
-      <main>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
+    </header>
+  </div>
+  <main>
+  </main>
+  <footer>
+    <div class="container"></div>
+  </footer>
+  </div>
 
-    <!-- Модалки -->
-    <!-- <div class="modal modal--preload" data-modal="feedback"> -->
-      <!-- <div class="modal__wrapper"> -->
-        <!-- <div class="modal__overlay" data-close-modal></div> -->
-        <!-- <div class="modal__content"> -->
-          <!-- <p class="modal__description">Обычная модалка</p> -->
-          <!-- <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal> -->
-            <!-- <svg width="15" height="15"> -->
-              <!-- <use xlink:href="img/sprite.svg#icon-close"></use> -->
-            <!-- </svg> -->
-          <!-- </button> -->
-        <!-- </div> -->
-      <!-- </div> -->
-    <!-- </div> -->
+  <!-- Модалки -->
+  <!-- <div class="modal modal--preload" data-modal="feedback"> -->
+  <!-- <div class="modal__wrapper"> -->
+  <!-- <div class="modal__overlay" data-close-modal></div> -->
+  <!-- <div class="modal__content"> -->
+  <!-- <p class="modal__description">Обычная модалка</p> -->
+  <!-- <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal> -->
+  <!-- <svg width="15" height="15"> -->
+  <!-- <use xlink:href="img/sprite.svg#icon-close"></use> -->
+  <!-- </svg> -->
+  <!-- </button> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
 
-    <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success"> -->
-      <!-- <div class="modal__wrapper"> -->
-        <!-- <div class="modal__overlay" data-close-modal></div> -->
-        <!-- <div class="modal__content"> -->
-          <!-- <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p> -->
-          <!-- <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal> -->
-            <!-- <svg width="15" height="15"> -->
-              <!-- <use xlink:href="img/sprite.svg#icon-close"></use> -->
-            <!-- </svg> -->
-          <!-- </button> -->
-        <!-- </div> -->
-      <!-- </div> -->
-    <!-- </div> -->
+  <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success"> -->
+  <!-- <div class="modal__wrapper"> -->
+  <!-- <div class="modal__overlay" data-close-modal></div> -->
+  <!-- <div class="modal__content"> -->
+  <!-- <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p> -->
+  <!-- <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal> -->
+  <!-- <svg width="15" height="15"> -->
+  <!-- <use xlink:href="img/sprite.svg#icon-close"></use> -->
+  <!-- </svg> -->
+  <!-- </button> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>
-
