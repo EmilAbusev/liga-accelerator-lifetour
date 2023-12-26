@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {toggleNavigationMenu} from './navigation-menu/navigation-button';
 import {initSwiperHero} from './swiper-slider/hero-swiper-slider';
+import {reproduceYoutubeVideo} from './modules/reproduce-video/reproduce-video';
 
 // ---------------------------------
 
@@ -10,6 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   window.addEventListener('load', () => {
     toggleNavigationMenu();
+    reproduceYoutubeVideo();
     initSwiperHero();
     initModals();
     const form = new Form();

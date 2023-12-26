@@ -5,11 +5,38 @@
   text-align: start;
   z-index: 3;
 
+  @include vp-1199 {
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    @include vp-767 {
+      padding-top: 140px;
+      padding-bottom: 145px;
+    }
+  }
+
+
   & h2 {
     margin: 0;
+    max-width: 940px;
     font-size: 77px;
     line-height: 77px;
     font-weight: 800;
+
+    @include vp-1199 {
+      max-width: 689px;
+      text-align: center;
+      font-size: 56px;
+      line-height: 56px;
+      font-weight: 800;
+    }
+
+    @include vp-767 {
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 800;
+    }
   }
 
   & p {
@@ -19,6 +46,19 @@
     font-size: 17px;
     line-height: 24px;
     font-weight: 400;
+
+    @include vp-1199 {
+      text-align: center;
+      margin-top: 13px;
+      max-width: 473px;
+    }
+
+    @include vp-767 {
+      margin-top: 15px;
+      max-width: 277px;
+      font-size: 15px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -33,6 +73,30 @@
   background-color: $color-navy-blue;
   text-align: center;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-default-white;
+    color: $color-resolution-blue;
+  }
+
+  &:active {
+    background-color: $color-resolution-blue;
+    color: $color-default-white;
+  }
+
+  &:disabled {
+    background-color: $color-nobel;
+    color: $color-default-white;
+  }
+
+  @include vp-1199 {
+    margin-top: 27px;
+  }
+
+  @include vp-767 {
+    margin-top: 60px;
+  }
 }
 
 .description__correction {
@@ -41,17 +105,25 @@
   margin-top: 134px;
   gap: 10px;
 
+
+  @include vp-1199 {
+    display: none;
+  }
+
+
   & span {
-    padding: 13px 22px;
+    padding: 13px 19px;
+    padding-left: 24px;
     border: 1px solid $color-white-05;
     font-size: 12px;
     line-height: 16px;
     font-weight: 400;
 
+
     & svg {
       position: relative;
       top: 2px;
-      left: -4px;
+      left: -5px;
     }
   }
 }
@@ -64,10 +136,30 @@
   top: 329px;
   z-index: 2;
 
+  @include vp-1199 {
+    position: relative;
+    margin-top: 45px;
+    margin-bottom: 115px;
+    width: 442px;
+    height: 300px;
+    top: 0;
+    left: 0;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+
+
   & img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  iframe {
+    width: 482px;
+    height: 317px;
   }
 }
 
@@ -81,6 +173,12 @@
   margin: 0;
   padding: 0;
   background-color: $color-transparent;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    top: 122px;
+    left: 193px;
+  }
 
   &::before {
     position: absolute;
@@ -93,6 +191,52 @@
     content: "";
   }
 
+  & svg+svg {
+    display: none;
+  }
+
+  @include hover-focus {
+
+    outline: none;
+    &::before {
+      border: 1px solid $color-resolution-blue;
+    }
+
+    & svg {
+      display: none;
+    }
+
+    & svg+svg {
+      display: block;
+    }
+  }
+
+  &:active {
+    background-color: $color-resolution-blue;
+    border-radius: 50%;
+
+    svg {
+      display: block;
+    }
+
+    svg + svg {
+      display: none;
+    }
+  }
+
+  &:disabled{
+
+    svg {
+      cursor: default;
+      color: $color-navy-blue;
+    }
+
+    &::before {
+      border: 1px solid $color-navy-blue-010;
+    }
+  }
+
+
   & svg {
     position: absolute;
     top: 50%;
@@ -104,21 +248,54 @@
 
 .description__photo {
   position: absolute;
-  right: 130px;
-  top: 340px;
+  right: 0px;
+  top: 187px;
   z-index: 2;
 
-  & picture {
-
-    & img {
-
-    }
+  @include vp-1199 {
+    width: 442px;
+    height: 365px;
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-top: 45px;
+    margin-bottom: 50px;
   }
+
+  @include vp-767 {
+    display: none;
+  }
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
+
 }
 
 .description__music {
   position: absolute;
-  bottom: 135px;
+  bottom: 147px;
   right: 0;
   z-index: 2;
+
+  @include vp-1199 {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 340px;
+    height: 220px;
+    margin-top: 45px;
+    margin-bottom: 195px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
 }

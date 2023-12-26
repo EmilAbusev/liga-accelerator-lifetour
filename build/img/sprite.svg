@@ -1,5 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="arrow-play" viewBox="0 0 12 22"><g fill="none">
-<path d="M12 11L0 0V22L12 11Z" fill="white"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="arrow-play-border" viewBox="0 0 14 26"><g fill="none">
+<path d="M13 13L1 2V24L13 13Z" fill="white" stroke="black"/>
+</g></symbol><symbol id="arrow-play" viewBox="0 0 12 22"><g fill="currentColor">
+<path d="M12 11L0 0V22L12 11Z"/>
 </g></symbol><symbol id="close-menu" viewBox="0 0 24 24"><g fill="none">
 <path d="M1.36365 1.36365L12 12M22.6364 22.6364L12 12M12 12L22.6364 1.36365L1.36365 22.6364" stroke="#2D383F" stroke-width="2"/>
 </g></symbol><symbol id="level" viewBox="0 0 12 12"><g fill="none">

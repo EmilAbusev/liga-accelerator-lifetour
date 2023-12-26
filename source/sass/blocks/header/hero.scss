@@ -9,7 +9,11 @@
     padding: 0 120px;
 
     @include vp-1199 {
-      padding: 0;
+      padding: 0 30px;
+    }
+
+    @include vp-767 {
+      padding: 0 15px;
     }
   }
 }
@@ -31,10 +35,20 @@
   padding-top: 200px;
   padding-bottom: 56px;
   min-height: 800px;
-}
 
-.hero__description {
-  padding-right: 420px;
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 212px;
+    padding-bottom: 72px;
+  }
+
+  @include vp-767 {
+    min-height: 568px;
+    padding: 0;
+  }
+
 }
 
 .hero__image {
@@ -42,15 +56,13 @@
   inset: 0;
   z-index: 1;
 
-  & picture {
-
     & img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-  }
 }
+
 .swiper {
   .hero__pagination {
     display: flex;
@@ -58,11 +70,22 @@
     position: absolute;
     justify-content: flex-end;
     bottom: 97px;
-    right: 0;
+    right: -7px;
     left: 0;
     z-index: 1;
-    gap: 20px;
-    cursor: pointer;
+    gap: 12px;
+
+    @include vp-1199 {
+      justify-content: center;
+      bottom: 40px;
+      right: 0;
+
+    }
+
+    @include vp-767 {
+      bottom: 40px;
+    }
+
 
     .swiper-pagination-bullet {
       width: 10px;
@@ -70,6 +93,23 @@
       opacity: 1;
       border: 1px solid $color-default-white;
       background-color: $color-transparent;
+
+      &:hover {
+        background-color: $color-white-05;
+      }
+
+      &:focus {
+        outline: 2px solid $color-white-05;
+      }
+
+      &:active {
+        background-color: $color-white-05;
+      }
+
+      @include vp-767 {
+        width: 8px;
+        height: 8px;
+      }
     }
 
     .swiper-pagination-bullet-active {
