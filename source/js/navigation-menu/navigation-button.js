@@ -47,5 +47,3 @@ const toggleNavigationMenu = () => {
 
 
 export {toggleNavigationMenu};
-
-

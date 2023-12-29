@@ -1,7 +1,7 @@
 const sliderHero = document.querySelector('[data-hero-slider="hero-slider"]');
 const swiperHeroPagination = document.querySelector('[data-hero-pagination="hero-swiper-pagination"]');
 
-const setSwiperHero = () => {
+const swiperHero = () => {
   return new window.Swiper(sliderHero, {
     pagination: {
       el: swiperHeroPagination,
@@ -16,7 +16,7 @@ const setSwiperHero = () => {
 
 const initSwiperHero = () => {
   if (document.body.contains(sliderHero)) {
-    setSwiperHero();
+    swiperHero();
   }
 };
 

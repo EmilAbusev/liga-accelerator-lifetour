@@ -1,14 +1,15 @@
 .logotype {
   color: $color-default-white;
 
-  &:hover{
+  & :hover {
     color: $color-resolution-blue;
   }
-  &:focus {
+
+  & :focus {
     outline: 1px solid $color-default-white;
   }
 
-  &:active {
+  & :active {
     color: $color-white-05;
   }
 
@@ -25,13 +26,15 @@
 .logotype--is-opened {
   color: $color-elephant;
 
-  &:focus {
+  & :focus {
     outline: 1px solid $color-elephant;
   }
-  &:hover {
+
+  & :hover {
     color: $color-resolution-blue;
   }
-  &:active {
+
+  & :active {
     color: $color-navy-blue;
   }
 }

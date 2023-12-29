@@ -33,9 +33,9 @@
     }
 
     @include vp-767 {
-    font-size: 26px;
-    line-height: 26px;
-    font-weight: 800;
+      font-size: 26px;
+      line-height: 26px;
+      font-weight: 800;
     }
   }
 
@@ -132,7 +132,7 @@
   position: absolute;
   width: 482px;
   height: 317px;
-  right: 0px;
+  right: 0;
   top: 329px;
   z-index: 2;
 
@@ -191,13 +191,13 @@
     content: "";
   }
 
-  & svg+svg {
+  & svg + svg {
     display: none;
   }
 
   @include hover-focus {
-
     outline: none;
+
     &::before {
       border: 1px solid $color-resolution-blue;
     }
@@ -206,7 +206,7 @@
       display: none;
     }
 
-    & svg+svg {
+    & svg + svg {
       display: block;
     }
   }
@@ -224,8 +224,7 @@
     }
   }
 
-  &:disabled{
-
+  &:disabled {
     svg {
       cursor: default;
       color: $color-navy-blue;
@@ -241,14 +240,14 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-3px,-11px);
+    transform: translate(-3px, -11px);
     cursor: pointer;
   }
 }
 
 .description__photo {
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 187px;
   z-index: 2;
 
@@ -270,13 +269,6 @@
     width: 100%;
     height: 100%;
   }
-
-  @include vp-1199 {
-  }
-
-  @include vp-767 {
-  }
-
 }
 
 .description__music {

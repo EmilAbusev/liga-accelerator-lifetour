@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {toggleNavigationMenu} from './navigation-menu/navigation-button';
 import {initSwiperHero} from './swiper-slider/hero-swiper-slider';
 import {reproduceYoutubeVideo} from './modules/reproduce-video/reproduce-video';
+import {initSwiperTours} from './swiper-slider/tours-swiper-slider';
 
 // ---------------------------------
 
@@ -13,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
     toggleNavigationMenu();
     reproduceYoutubeVideo();
     initSwiperHero();
+    initSwiperTours();
     initModals();
     const form = new Form();
     window.form = form;
